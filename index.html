@@ -1,59 +1,338 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Ensan Amana Association</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description"
+        content="Al Ensan Amana Association - Dedicated to improving the lives of vulnerable individuals in Lebanon through essential services, education, and healthcare.">
+    <title>Al Ensan Amana Association | Your Work Speaks For You</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                navy: '#0c1a52',
-                blue: '#3ba9e0',
-                orange: '#f58220',
-                green: '#8cc63f',
-                red: '#c6165d'
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3, .serif {
-            font-family: 'Playfair Display', serif;
-        }
-        .text-brand-gradient {
-            background: linear-gradient(to right, #0c1a52, #3ba9e0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="/index.css">
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-C3dq6lmj.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <div id="root"></div>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Al Ensan Amana Logo" class="logo-img">
+                <span class="logo-text">Al Ensan Amana</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#impact" class="nav-link">Our Impact</a></li>
+                    <li><a href="#strategy" class="nav-link">Strategy</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <span class="close-menu">&times;</span>
+        <ul class="mobile-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#strategy">Strategy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Al Ensan Amana</h1>
+            <p class="hero-subtitle">Your work speaks for you.</p>
+            <p class="hero-description"> Dedicated to improving lives and building a just society where everyone lives
+                with dignity.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-outline">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                    <h3 class="stat-number" data-target="500">500+</h3>
+                    <p class="stat-label">Students Supported</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-heart-pulse stat-icon"></i>
+                    <h3 class="stat-number" data-target="1000">1000+</h3>
+                    <p class="stat-label">Medical Services</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-hand-holding-heart stat-icon"></i>
+                    <h3 class="stat-number" data-target="250">250+</h3>
+                    <p class="stat-label">Families Assisted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="values section">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <i class="fa-solid fa-hand-fist"></i>
+                    </div>
+                    <h3>Empowerment</h3>
+                    <p>Building capacity and self-reliance in individuals to shape their own futures.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>Equality</h3>
+                    <p>Serving everyone regardless of gender, nationality, or background.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Protection</h3>
+                    <p>Safeguarding the vulnerable, especially women and children, through dedicated programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about section bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title text-left">About Us</h2>
+                    <div class="about-item">
+                        <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+                        <p>Improving the lives of vulnerable individuals in Lebanon through essential services in
+                            education, health, and social aid.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+                        <p>A just and inclusive society where everyone lives with dignity and basix rights are
+                            respected.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3><i class="fa-solid fa-lightbulb"></i> Our Philosophy</h3>
+                        <p>We serve everyone regardless of gender or nationality, with a special focus on refugees and
+                            displaced populations, ensuring no one is left behind.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for an image representing the mission -->
+                    <div class="image-placeholder">
+                        <i class="fa-solid fa-users-rays"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Impact -->
+    <section id="impact" class="impact section">
+        <div class="container">
+            <h2 class="section-title">Our Impact & Programs</h2>
+            <p class="section-subtitle">Delivering comprehensive support where it's needed most.</p>
+
+            <div class="impact-grid">
+                <!-- Health -->
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3>Health Sector</h3>
+                    <p>Through the <strong>Mar Elias Specialized Center</strong>, we provide:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Comprehensive medical services</li>
+                        <li><i class="fa-solid fa-check"></i> Surgeries & specialized care</li>
+                        <li><i class="fa-solid fa-check"></i> Medication for chronic diseases at symbolic prices</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Education</h3>
+                    <p>Empowering the next generation through:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> School supplies distribution</li>
+                        <li><i class="fa-solid fa-check"></i> Literacy programs</li>
+                        <li><i class="fa-solid fa-check"></i> Support for youth at risk of dropping out</li>
+                    </ul>
+                </div>
+
+                <!-- Social Aid -->
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <h3>Social & Humanitarian Aid</h3>
+                    <p>Immediate relief and long-term support:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Food assistance & essential supplies</li>
+                        <li><i class="fa-solid fa-check"></i> Support for impoverished families</li>
+                        <li><i class="fa-solid fa-check"></i> Vocational training for economic empowerment</li>
+                    </ul>
+                </div>
+
+                <!-- Specialized Support -->
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                    <h3>Specialized Support</h3>
+                    <p>Targeted interventions for specific needs:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Women's psychosocial well-being</li>
+                        <li><i class="fa-solid fa-check"></i> Child protection services</li>
+                        <li><i class="fa-solid fa-check"></i> Support for people with disabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Objectives -->
+    <section id="strategy" class="strategy section bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Strategic Objectives</h2>
+            <div class="strategy-list">
+                <div class="strategy-item">
+                    <span class="strategy-number">01</span>
+                    <h4>Education & Awareness</h4>
+                </div>
+                <div class="strategy-item">
+                    <span class="strategy-number">02</span>
+                    <h4>Capacity Building</h4>
+                </div>
+                <div class="strategy-item">
+                    <span class="strategy-number">03</span>
+                    <h4>Humanitarian Aid</h4>
+                </div>
+                <div class="strategy-item">
+                    <span class="strategy-number">04</span>
+                    <h4>Healthcare & Well-being</h4>
+                </div>
+                <div class="strategy-item">
+                    <span class="strategy-number">05</span>
+                    <h4>Sustainable Development</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title text-left">Contact Us</h2>
+                    <p>We are here to help and collaborate. Reach out to us.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Jezzine, Lebanon</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:Info@ensanamana.com">Info@ensanamana.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h5>Phones</h5>
+                                <p><a href="tel:+96103672915">+961 03 672 915</a></p>
+                                <p><a href="tel:+96178818369">+961 78 818 369</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Al Ensan Amana</h3>
+                    <p>Your work speaks for you.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Ensan Amana Association. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
